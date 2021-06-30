@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    #6264A7
+    #fff
+    #A6A7DC
+    <color name="Background"> #6264A7</color>
+    <color name="Background1"> #6264A7</color>
+
+
+   <color name="border"> #E1DFDD</color>
+
+
+    <color name="border2" >#605E5C</color>
+   <color name="shadow">#000</color>
+
+ <color name="ocean_blue"> #464EB8</color>
+ <color name="slate_blue">#7B83EB</color>
+
+ <color name="iris">#505AC9</color>
+
+
+    <color name="foreground_hover" >#6264A7</color>
+    #000
+    <color name="forground_hover2">#A6A7DC</color>
+    <color name="Background_Hover"> #585A96</color>
+
+<!--
+    #1aebff
+    #8B8CC7
+    Border Hover
+    #BDBDE6
+    #1aebff
+    #6264A7
+    Shadow Hover
+    #000
+    #000
+    #000
+    Foreground Active
+    #6264A7
+    #1aebff
+    #A6A7DC
+    Background Active
+    #6264A7
+    #000
+    #A6A7DC
+    Border Active
+    #E1DFDD
+    #1aebff
+    #605E5C
+    Shadow Active
+    Not defined
+    Not defined
+    Not defined
+    Foreground Focus
+    #6264A7
+    #000
+    #A6A7DC
+    Background Focus
+    #6264A7
+    #1aebff
+    #6264A7
+    Border Focus
+    #000
+    #1aebff
+    #fff
+    Shadow Focus
+    Not defined
+    Not defined
+    Not defined
+    Foreground Pressed
+    #464775
+    #000
+    #E2E2F6
+    Background Pressed
+    #464775
+    #1aebff
+    #585A96
+    Border Pressed
+    #BDBDE6
+    #1aebff
+    #464775
+    Shadow Pressed
+    Not defined
+    Not defined
+    Not defined
+    Foreground Disabled
+    #C8C6C4
+    #000
+    #605E5C
+    Background Disabled
+    #EDEBE9
+    #3ff23f
+    #3B3A39
+    Border Disabled
+    #EDEBE9
+    #3ff23f
+    #3B3A39
+    Shadow Disabled
+    Not defined
+    Not defined
+    Not defined
+    Foreground 1
+    #6264A7
+    #ffff01
+    #A6A7DC
+    Foreground 2
+    #585A96
+    #ffff01
+    #A6A7DC
+    Foreground 3
+    #E2E2F6
+    #ffff01
+    #E2E2F6
+    Foreground 4
+    #fff
+    #000
+    #fff
+    Background 1
+    #E5E5F1
+    #000
+    #33344A
+    Background 2
+    #33344A
+    #000
+    #33344A
+    Background 3
+    #373644
+    #000
+    #373644
+    Background 4
+    #464775
+    #000
+    #2D2C2C
+    Border 1
+    #E2E2F6
+    #fff
+    #464775
+    Border 2
+    #BDBDE6
+    #fff
+    #464775
+    Foreground Hover 1
+    #fff
+    #000
+    #fff
+    Foreground Hover 2
+    #E2E2F6
+    #000
+    #E2E2F6
+    Background Hover 1
+    #F4F4FC
+    #1aebff
+    #33344A
+    Background Hover 2
+    #E5E5F1
+    #ffff01
+    #33344A
+    Foreground Pressed 1
+    #fff
+    #000
+    #fff
+    Foreground Active 1
+    #6264A7
+    #000
+    #A6A7DC
+    Foreground Active 2
+    #E2E2F6
+    #1aebff
+    #E2E2F6
+    Background Active 1
+    #6264A7
+    #1aebff
+    #A6A7DC
+    Border Active 1
+    #E2E2F6
+    #1aebff
+    #464775
+    Border Active 2
+    #BDBDE6
+    #1aebff
+    #464775
+    Foreground Focus 1
+    #6264A7
+    #000
+    #A6A7DC
+    Foreground Focus 2
+    #585A96
+    #000
+    #A6A7DC
+    Foreground Focus 3
+    #E2E2F6
+    #000
+    #E2E2F6
+    Foreground Focus 4
+    #fff
+    #000
+    #fff
+    Background Focus 1
+    #E5E5F1
+    #1aebff
+    #33344A
+    Background Focus 2
+    #33344A
+    #1aebff
+    #33344A
+    Background Focus 3
+    #373644
+    #1aebff
+    #373644
+    Border Focus Within
+    #fff
+    #000
+    #000
+    Border Focus 1
+    #6264A7
+    #1aebff
+    #A6A7DC
+    Foreground Disabled 1
+    #C8C6C4
+    #3ff23f
+    #605E5C
+    Background Disabled 1
+    #EDEBE9
+
+
+
+
+-->
+
+</resources>
