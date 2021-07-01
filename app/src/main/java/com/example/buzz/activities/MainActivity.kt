@@ -1,4 +1,4 @@
-package com.example.buzz
+package com.example.buzz.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,10 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.ViewPager
-import layout.Fragment0
-import layout.Fragment1
-import layout.Fragment2
-import layout.Fragment3
+import com.example.buzz.R
+import com.example.buzz.fragments.Fragment0
+import com.example.buzz.fragments.Fragment1
+import com.example.buzz.fragments.Fragment2
+import com.example.buzz.fragments.Fragment3
 
 class MainActivity : AppCompatActivity() {
     private val NumPages: Int = 4

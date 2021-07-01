@@ -8,14 +8,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Frontend">
-        <activity android:name="com.example.buzz.LoginActivity"
+        <activity android:name="com.example.buzz.activities.LoginActivity"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"></activity>
-        <activity android:name="com.example.buzz.SignupActivity"
+        <activity android:name="com.example.buzz.activities.SignupActivity"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"/>
-        <activity android:name="com.example.buzz.HomeActivity" />
-        <activity android:name="com.example.buzz.MainActivity"
+        <activity android:name="com.example.buzz.activities.HomeActivity" />
+        <activity android:name="com.example.buzz.activities.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

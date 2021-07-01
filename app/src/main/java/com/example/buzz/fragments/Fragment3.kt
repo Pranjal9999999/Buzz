@@ -1,4 +1,4 @@
-package layout
+package com.example.buzz.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

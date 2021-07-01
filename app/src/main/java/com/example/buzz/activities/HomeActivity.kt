@@ -1,4 +1,4 @@
-package com.example.buzz
+package com.example.buzz.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,9 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.ViewPager
-import layout.Fragment1
-import layout.Fragment2
-import layout.Fragment3
+import com.example.buzz.R
+import com.example.buzz.fragments.Fragment1
+import com.example.buzz.fragments.Fragment2
+import com.example.buzz.fragments.Fragment3
 
 class HomeActivity : AppCompatActivity() {
     private val NumPages: Int = 3
@@ -51,7 +52,7 @@ class HomeActivity : AppCompatActivity() {
         //Navigate with delay
         mDelayHandler!!.postDelayed(mRunnable, SPLASH_DELAY)
         viewPager = findViewById(R.id.liquid_view_pager)
-        adapter = HomeActivity.OnboardingPagerAdapter(supportFragmentManager)
+        adapter = OnboardingPagerAdapter(supportFragmentManager)
         viewPager.adapter = adapter
     }
     class OnboardingPagerAdapter(fragmentManager: FragmentManager) :

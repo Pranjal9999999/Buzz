@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/iris"
     app:flow_firstHorizontalStyle="packed"
-    tools:context=".LoginActivity">
+    tools:context=".activities.LoginActivity">
 
     <TextView
         android:layout_width="wrap_content"

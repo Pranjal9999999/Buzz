@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:foregroundGravity="center_horizontal"
     android:elevation="35dp"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <ImageView
         android:id="@+id/icon"
