@@ -5,8 +5,9 @@
     android:id="@+id/style"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:foregroundGravity="center_horizontal"
+    android:background="@color/white"
     android:elevation="35dp"
+    android:foregroundGravity="center_horizontal"
     tools:context=".activities.MainActivity">
 
     <ImageView
@@ -22,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:srcCompat="@drawable/icon_teams"  />
+        app:srcCompat="@drawable/icon_teams" />
 
     <com.cuberto.liquid_swipe.LiquidPager
         android:id="@+id/liquid_view_pager"
