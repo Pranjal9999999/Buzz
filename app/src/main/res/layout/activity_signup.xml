@@ -27,11 +27,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
+        android:background="@color/white"
         android:focusable="auto"
         android:rotation="0"
         android:rotationX="0"
         android:rotationY="0"
         android:translationZ="56dp"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="15dp"
         app:cardElevation="56dp"
         app:cardPreventCornerOverlap="false"
@@ -57,10 +59,12 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/textboxemail"
+                android:drawableLeft="@drawable/icon_user"
                 android:ems="10"
                 android:hint="Full Name"
                 android:inputType="textPersonName"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textColorHint="#756D6D" />
 
             <EditText
                 android:id="@+id/email_signup"
@@ -68,27 +72,41 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/textboxemail"
+                android:drawableLeft="@drawable/email_icon"
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textColorHint="#756D6D" />
 
             <EditText
                 android:id="@+id/Password_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/textboxemail"
+                android:drawableLeft="@drawable/icon_password"
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textColorHint="#756D6D" />
+
+            <ProgressBar
+                android:id="@+id/signUpProgressBar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/create_account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="5dp"
                 android:text="Create an account"
+                android:textColor="@color/white"
                 app:cornerRadius="45dp" />
 
             <Button

@@ -9,7 +9,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Share ideas.."
+        android:text="Communicate.."
         android:textColor="@color/slate_blue"
         android:textSize="@dimen/_25sdp"
         android:textStyle="bold"

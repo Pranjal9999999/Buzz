@@ -59,20 +59,24 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/textboxemail"
+                android:drawableLeft="@drawable/email_icon"
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textColorHint="#756D6D" />
 
             <EditText
                 android:id="@+id/Password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/textboxemail"
+                android:drawableLeft="@drawable/icon_password"
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textColorHint="#756D6D" />
 
             <Button
                 android:id="@+id/login"
@@ -80,6 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:text="LOgin"
+                android:textColor="@color/white"
                 app:cornerRadius="45dp" />
 
             <Button
@@ -89,6 +94,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="15dp"
                 android:text="Create an account"
+                android:textColor="@color/white"
                 app:cornerRadius="45dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
