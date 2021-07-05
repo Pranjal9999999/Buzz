@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.buzz">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon_teams"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.Frontend">
-
-
+        android:theme="@style/Theme.Frontend"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.RoomCreator"></activity>
+        <activity android:name=".activities.VideoRoomActivity" />
+        <activity android:name=".activities.AudioRoomActivity" />
+        <activity android:name=".activities.DashboardActivity" />
         <activity
             android:name=".activities.LoginActivity"
             android:screenOrientation="portrait"
@@ -20,9 +23,9 @@
             android:name=".activities.SignupActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.ShortSplashActivity" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,10 +38,9 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <service
-            android:name=".MyService">
+        <service android:name=".utilities.MyService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
     </application>

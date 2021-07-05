@@ -12,10 +12,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Signup"
+        android:text="Create or join a conference room"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/_25sdp"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,71 +55,52 @@
             android:padding="10dp">
 
             <EditText
-                android:id="@+id/name"
+                android:id="@+id/meeting_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/textboxemail"
-                android:drawableLeft="@drawable/icon_user"
                 android:ems="10"
-                android:hint="Full Name"
-                android:inputType="textPersonName"
+                android:hint="Enter Room Name"
+                android:inputType="text"
                 android:padding="10dp"
                 android:textColorHint="#756D6D" />
 
             <EditText
-                android:id="@+id/email_signup"
+                android:id="@+id/name_notsignedup_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/textboxemail"
-                android:drawableLeft="@drawable/email_icon"
                 android:ems="10"
-                android:hint="Email"
+                android:hint="Enter your name"
                 android:inputType="textEmailAddress"
                 android:padding="10dp"
-                android:textColorHint="#756D6D" />
+                android:textColorHint="#756D6D"
+                android:visibility="gone" />
 
-            <EditText
-                android:id="@+id/Password_signup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/textboxemail"
-                android:drawableLeft="@drawable/icon_password"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:padding="10dp"
-                android:textColorHint="#756D6D" />
+
 
             <ProgressBar
-                android:id="@+id/signUpProgressBar"
+                android:id="@+id/JoinProgressBar"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:visibility="invisible" />
+                android:visibility="gone" />
 
             <Button
-                android:id="@+id/create_account"
+                android:id="@+id/join"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="Create an account"
+                android:text="Join"
                 android:textColor="@color/white"
                 app:cornerRadius="45dp" />
 
-            <Button
-                android:id="@+id/back_to_login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="15dp"
-                android:text="Already Have an account?"
-                android:textColor="@color/white"
-                app:cornerRadius="45dp" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

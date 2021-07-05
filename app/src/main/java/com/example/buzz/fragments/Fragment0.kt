@@ -13,6 +13,6 @@ class Fragment0:Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.activity_main, container, false)
+        return inflater.inflate(R.layout.fragment_onboarding0, container, false)
     }
 }

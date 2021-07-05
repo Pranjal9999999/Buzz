@@ -1,5 +1,6 @@
 package com.example.buzz.fragments
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -18,10 +19,12 @@ class Fragment3: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view: View = inflater!!.inflate(R.layout.fragment_onboarding3, container, false)
-        val intent=Intent(this@Fragment3.context, LoginActivity::class.java)
+
         var getStarted: Button = view.findViewById(R.id.get_started_button)
         getStarted.setOnClickListener{
+            val intent=Intent(this@Fragment3.context, LoginActivity::class.java)
             startActivity(intent)
+
 
         }
         return view

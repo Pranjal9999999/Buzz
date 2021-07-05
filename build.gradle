@@ -35,7 +35,10 @@ allprojects {
                     username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
                     password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
                 }
-            }
+                maven{
+                    url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"}
+
+                 }
         }
     }
 }

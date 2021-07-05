@@ -9,7 +9,8 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
 import com.example.buzz.R
-import com.example.buzz.User
+import com.example.buzz.utilities.User
+import com.example.buzz.utilities.AppPreferences
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -28,6 +29,7 @@ class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
+        AppPreferences.init(this)
         var backToLogin: Button = findViewById(R.id.back_to_login)
         progressBar = findViewById(R.id.signUpProgressBar)
         val intent = Intent(this@SignupActivity, LoginActivity::class.java)
@@ -60,7 +62,6 @@ class SignupActivity : AppCompatActivity() {
                 Toast.makeText(baseContext, "Enter all the credentials", Toast.LENGTH_SHORT).show()
                 progressBar.visibility = View.GONE
                 signup.visibility = View.VISIBLE
-
 
 
             } else {
@@ -97,6 +98,7 @@ class SignupActivity : AppCompatActivity() {
                             }
                         }
             }
+        }
             loginBack.setOnClickListener {
                 val intent = Intent(this@SignupActivity, LoginActivity::class.java)
                 startActivity(intent)
@@ -108,4 +110,4 @@ class SignupActivity : AppCompatActivity() {
 
 
     }
-}
+

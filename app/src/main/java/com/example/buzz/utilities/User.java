@@ -1,4 +1,4 @@
-package com.example.buzz;
+package com.example.buzz.utilities;
 
 public class User {
     private String name,email,password;

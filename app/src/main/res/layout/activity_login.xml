@@ -5,7 +5,7 @@
     android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/iris"
+    android:background="@drawable/signup_background"
     app:flow_firstHorizontalStyle="packed"
     tools:context=".activities.LoginActivity">
 
@@ -78,6 +78,14 @@
                 android:padding="10dp"
                 android:textColorHint="#756D6D" />
 
+            <ProgressBar
+                android:id="@+id/login_progress_bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/login"
                 android:layout_width="match_parent"
@@ -85,6 +93,16 @@
                 android:layout_marginTop="35dp"
                 android:text="LOgin"
                 android:textColor="@color/white"
+                app:cornerRadius="45dp" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="LOgout"
+                android:textColor="@color/white"
+                android:visibility="gone"
                 app:cornerRadius="45dp" />
 
             <Button
@@ -96,6 +114,8 @@
                 android:text="Create an account"
                 android:textColor="@color/white"
                 app:cornerRadius="45dp" />
+
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

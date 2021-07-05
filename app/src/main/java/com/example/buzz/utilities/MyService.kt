@@ -1,4 +1,4 @@
-package com.example.buzz
+package com.example.buzz.utilities
 
 import android.util.Log
 import com.google.firebase.messaging.FirebaseMessagingService

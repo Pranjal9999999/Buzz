@@ -1,5 +1,7 @@
 package com.example.buzz.activities
 
+
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -13,8 +15,9 @@ import com.example.buzz.fragments.Fragment0
 import com.example.buzz.fragments.Fragment1
 import com.example.buzz.fragments.Fragment2
 import com.example.buzz.fragments.Fragment3
+import com.example.buzz.utilities.AppPreferences
 
-class MainActivity : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
     private val NumPages: Int = 4
     private lateinit var viewPager: ViewPager
     private lateinit var adapter: OnboardingPagerAdapter
@@ -47,7 +50,16 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_home)
+    setContentView(R.layout.activity_splash)
+        AppPreferences.init(this)
+        if(AppPreferences.isLogin)
+        {
+            val intent= Intent(this@SplashActivity,ShortSplashActivity::class.java)
+            startActivity(intent)
+            finish()
+
+        }
+
         mDelayHandler = Handler()
 
         //Navigate with delay
@@ -84,7 +96,10 @@ class MainActivity : AppCompatActivity() {
                 }
 
 
+
+
             }
+
 
 
         }
