@@ -4,10 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ProgressBar
-import android.widget.Toast
+import android.widget.*
 import com.example.buzz.R
 import com.example.buzz.utilities.User
 import com.example.buzz.utilities.AppPreferences
@@ -26,14 +23,20 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var progressBar: ProgressBar
     var database = Firebase.firestore
+    lateinit var skip:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
+        skip=findViewById(R.id.skip_login)
         AppPreferences.init(this)
         var backToLogin: Button = findViewById(R.id.back_to_login)
         progressBar = findViewById(R.id.signUpProgressBar)
         val intent = Intent(this@SignupActivity, LoginActivity::class.java)
         backToLogin.setOnClickListener {
+            startActivity(intent)
+        }
+        skip.setOnClickListener {
+            val intent=Intent(this@SignupActivity,VideoRoomActivity::class.java)
             startActivity(intent)
         }
         auth = Firebase.auth

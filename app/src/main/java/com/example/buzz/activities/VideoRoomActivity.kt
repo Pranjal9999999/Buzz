@@ -49,6 +49,7 @@ class VideoRoomActivity : AppCompatActivity() {
             var options: JitsiMeetConferenceOptions = JitsiMeetConferenceOptions.Builder()
                 .setRoom(code.text.toString()).setWelcomePageEnabled(false).build()
             JitsiMeetActivity.launch(this@VideoRoomActivity,options)
+            finish()
 
         }
     }

@@ -6,10 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ProgressBar
-import android.widget.Toast
+import android.widget.*
 import com.example.buzz.R
 import com.example.buzz.utilities.AppPreferences
 import com.google.firebase.auth.FirebaseAuth
@@ -24,6 +21,7 @@ class LoginActivity : AppCompatActivity() {
    // lateinit var logout:Button
     private lateinit var progressBar: ProgressBar
     private lateinit var auth: FirebaseAuth
+    lateinit var skip:TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,11 +31,16 @@ class LoginActivity : AppCompatActivity() {
         password1 = findViewById(R.id.Password)
         login = findViewById(R.id.login)
         auth = Firebase.auth
+        skip=findViewById(R.id.skip_login)
         //logout=findViewById(R.id.logout)
         progressBar=findViewById(R.id.login_progress_bar)
         AppPreferences.init(this)
         val intent = Intent(this@LoginActivity, SignupActivity::class.java)
         SignUp.setOnClickListener {
+            startActivity(intent)
+        }
+        skip.setOnClickListener {
+            val intent=Intent(this@LoginActivity,VideoRoomActivity::class.java)
             startActivity(intent)
         }
         if (AppPreferences.isLogin) {

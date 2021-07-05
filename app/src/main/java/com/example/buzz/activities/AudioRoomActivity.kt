@@ -22,6 +22,7 @@ class AudioRoomActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room_creator)
+        progress_bar=findViewById(R.id.JoinProgressBar)
         progress_bar.visibility=View.GONE
         code=findViewById(R.id.meeting_code)
         join=findViewById(R.id.join)
@@ -47,8 +48,9 @@ class AudioRoomActivity : AppCompatActivity() {
             progress_bar.visibility= View.VISIBLE
 
             var options: JitsiMeetConferenceOptions = JitsiMeetConferenceOptions.Builder()
-                .setRoom(code.text.toString()).setWelcomePageEnabled(false).setAudioOnly(true).build()
+                .setRoom(code.text.toString()).setAudioOnly(true).setWelcomePageEnabled(false).build()
             JitsiMeetActivity.launch(this@AudioRoomActivity,options)
+            finish()
 
         }
     }
