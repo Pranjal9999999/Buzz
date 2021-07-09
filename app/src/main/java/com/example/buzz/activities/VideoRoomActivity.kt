@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
+import android.widget.Toast
 import com.example.buzz.R
 import com.example.buzz.utilities.AppPreferences
 import org.jitsi.meet.sdk.JitsiMeet
@@ -44,12 +45,16 @@ class VideoRoomActivity : AppCompatActivity() {
         }
 
         join.setOnClickListener{
-            progress_bar.visibility= View.VISIBLE
+            if(code.text.toString().trim().isEmpty())
+                Toast.makeText(this,"Enter room name",Toast.LENGTH_SHORT).show()
+            else {
+                progress_bar.visibility = View.VISIBLE
 
-            var options: JitsiMeetConferenceOptions = JitsiMeetConferenceOptions.Builder()
-                .setRoom(code.text.toString()).setWelcomePageEnabled(false).build()
-            JitsiMeetActivity.launch(this@VideoRoomActivity,options)
-            finish()
+                var options: JitsiMeetConferenceOptions = JitsiMeetConferenceOptions.Builder()
+                    .setRoom(code.text.toString()).setWelcomePageEnabled(false).build()
+                JitsiMeetActivity.launch(this@VideoRoomActivity, options)
+                finish()
+            }
 
         }
     }

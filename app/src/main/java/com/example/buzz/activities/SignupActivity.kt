@@ -27,18 +27,12 @@ class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
-        skip=findViewById(R.id.skip_login)
+
         AppPreferences.init(this)
         var backToLogin: Button = findViewById(R.id.back_to_login)
         progressBar = findViewById(R.id.signUpProgressBar)
-        val intent = Intent(this@SignupActivity, LoginActivity::class.java)
-        backToLogin.setOnClickListener {
-            startActivity(intent)
-        }
-        skip.setOnClickListener {
-            val intent=Intent(this@SignupActivity,VideoRoomActivity::class.java)
-            startActivity(intent)
-        }
+
+
         auth = Firebase.auth
         loginBack = findViewById(R.id.back_to_login)
         email = findViewById(R.id.email_signup)
@@ -46,6 +40,15 @@ class SignupActivity : AppCompatActivity() {
         signup = findViewById(R.id.create_account)
         name = findViewById(R.id.name)
         database = FirebaseFirestore.getInstance()
+        skip=findViewById(R.id.skip_signup)
+        backToLogin.setOnClickListener {
+            val intent = Intent(this@SignupActivity, LoginActivity::class.java)
+            startActivity(intent)
+        }
+        skip.setOnClickListener {
+            val intent=Intent(this@SignupActivity,VideoRoomActivity::class.java)
+            startActivity(intent)
+        }
 
 
 
@@ -57,6 +60,7 @@ class SignupActivity : AppCompatActivity() {
             user1.setEmail(mail1)
             user1.setName(name)
             user1.setPassword(pass)
+
             signup.visibility = View.GONE
             progressBar.visibility = View.VISIBLE
 

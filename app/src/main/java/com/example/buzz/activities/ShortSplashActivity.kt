@@ -38,7 +38,7 @@ class ShortSplashActivity : AppCompatActivity() {
 
     internal val mRunnable: Runnable = Runnable {
 
-        val intent = Intent(applicationContext, DashboardActivity::class.java)
+        val intent = Intent(applicationContext, ChatActivity::class.java)
         startActivity(intent)
         finish()
     }

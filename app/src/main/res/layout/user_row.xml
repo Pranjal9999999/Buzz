@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+android:id="@+id/user_card_chat"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    android:clickable="true"
+    android:padding="@dimen/_2sdp"
+    app:cardCornerRadius="20dp"
+    android:elevation="@dimen/_30sdp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/username_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/time_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_2sdp"/>
+
+        <TextView
+            android:id="@+id/latest_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="message"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_2sdp"
+            android:layout_below="@+id/time_stamp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

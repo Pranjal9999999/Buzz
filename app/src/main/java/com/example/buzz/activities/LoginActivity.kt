@@ -12,6 +12,7 @@ import com.example.buzz.utilities.AppPreferences
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.example.buzz.utilities.User
 
 class LoginActivity : AppCompatActivity() {
     lateinit var SignUp: Button
@@ -34,10 +35,12 @@ class LoginActivity : AppCompatActivity() {
         skip=findViewById(R.id.skip_login)
         //logout=findViewById(R.id.logout)
         progressBar=findViewById(R.id.login_progress_bar)
+        var user1= User()
         AppPreferences.init(this)
-        val intent = Intent(this@LoginActivity, SignupActivity::class.java)
+
         SignUp.setOnClickListener {
-            startActivity(intent)
+            val intent1 = Intent(this@LoginActivity, SignupActivity::class.java)
+            startActivity(intent1)
         }
         skip.setOnClickListener {
             val intent=Intent(this@LoginActivity,VideoRoomActivity::class.java)
@@ -65,14 +68,14 @@ class LoginActivity : AppCompatActivity() {
                                     AppPreferences.isLogin = true
                                     AppPreferences.email = email1.text.toString()
                                     AppPreferences.password = password1.text.toString()
-
+                                   // AppPreferences.username=user1.getName()
                                     Log.d(ContentValues.TAG, "signInWithEmail:success")
                                     Toast.makeText(
                                             baseContext, "Logged in successfully",
                                             Toast.LENGTH_SHORT
                                     ).show()
 
-                                    val intent1 = Intent(this@LoginActivity, DashboardActivity::class.java)
+                                    val intent1 = Intent(this@LoginActivity, ChatActivity::class.java)
                                 startActivity(intent1)
 
                                 } else {

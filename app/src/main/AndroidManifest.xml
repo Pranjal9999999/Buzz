@@ -3,15 +3,16 @@
     package="com.example.buzz">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon_teams"
+        android:icon="@drawable/icon5"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Frontend"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.RoomCreator"></activity>
+        <activity android:name=".activities.ChatActivity"></activity>
         <activity android:name=".activities.VideoRoomActivity" />
         <activity android:name=".activities.AudioRoomActivity" />
         <activity android:name=".activities.DashboardActivity" />
