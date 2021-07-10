@@ -62,7 +62,7 @@ class ChatActivity : AppCompatActivity() {
                 val message: TextView = holder.itemView.findViewById(R.id.latest_message)
                 name.text = model.name
                 card.setOnClickListener {
-                    val intent=Intent(this@ChatActivity,DashboardActivity::class.java)
+                    val intent=Intent(this@ChatActivity,ChatLogActivity::class.java)
                     startActivity(intent)
                 }
 

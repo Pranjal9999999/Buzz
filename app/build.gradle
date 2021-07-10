@@ -68,6 +68,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging-ktx:22.0.0'
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.firebaseui:firebase-ui-firestore:7.2.0'
+    //Agora
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'io.agora.rtc:full-sdk:2.4.1'
     //Jitsi
     implementation ('org.jitsi.react:jitsi-meet-sdk:3.0.0') { transitive = true }
 

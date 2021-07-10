@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Buzz</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="agora_app_id">a7892bb787fe42a68eafabcda097efef</string>
+    <string name="agora_access_token"></string>
 </resources>
