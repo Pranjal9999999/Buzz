@@ -128,8 +128,8 @@
         android:id="@+id/skip_signup"
 
         android:text="Skip SignUp?"
-        android:textColor="@color/red"
-        android:textSize="@dimen/_25ssp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
