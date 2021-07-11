@@ -9,9 +9,11 @@ import android.content.SharedPreferences
 
         //SharedPreferences variables
         private val IS_LOGIN = Pair("is_login", false)
-        private val EMAIL    = Pair("email","")
+        private val EMAIL = Pair("email", "")
         private val USERNAME = Pair("username", "")
         private val PASSWORD = Pair("password", "")
+        private val ID = Pair("id", "")
+        private val TO_ID = Pair("id", "")
 
         fun init(context: Context) {
             preferences = context.getSharedPreferences(NAME, MODE)
@@ -46,5 +48,15 @@ import android.content.SharedPreferences
             get() = preferences.getString(PASSWORD.first, PASSWORD.second) ?: ""
             set(value) = preferences.edit {
                 it.putString(PASSWORD.first, value)
+            }
+        var id: String
+            get() = preferences.getString(ID.first, ID.second) ?: ""
+            set(value) = preferences.edit {
+                it.putString(ID.first, value)
+            }
+        var toid: String
+            get() = preferences.getString(TO_ID.first, TO_ID.second) ?: ""
+            set(value) = preferences.edit {
+                it.putString(TO_ID.first, value)
             }
     }

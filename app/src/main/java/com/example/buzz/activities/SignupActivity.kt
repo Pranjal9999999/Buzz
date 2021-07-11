@@ -24,6 +24,7 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var progressBar: ProgressBar
     var database = Firebase.firestore
     lateinit var skip:TextView
+    lateinit var userID:String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
@@ -31,8 +32,7 @@ class SignupActivity : AppCompatActivity() {
         AppPreferences.init(this)
         var backToLogin: Button = findViewById(R.id.back_to_login)
         progressBar = findViewById(R.id.signUpProgressBar)
-
-
+        AppPreferences.init(this)
         auth = Firebase.auth
         loginBack = findViewById(R.id.back_to_login)
         email = findViewById(R.id.email_signup)
@@ -61,6 +61,8 @@ class SignupActivity : AppCompatActivity() {
             user1.setName(name)
             user1.setPassword(pass)
 
+
+
             signup.visibility = View.GONE
             progressBar.visibility = View.VISIBLE
 
@@ -79,9 +81,13 @@ class SignupActivity : AppCompatActivity() {
                             if (task.isSuccessful) {
                                 // Sign in success, update UI with the signed-in user's information
                                 // Log.d(TAG, "createUserWithEmail:success")
-                                database.collection("Users").document().set(user1).addOnSuccessListener {
+                             userID= auth.currentUser!!.uid.toString()
+                                user1.setId(userID)
+
+                                database.collection("Users").document(userID).set(user1).addOnSuccessListener {
                                     progressBar.visibility = View.GONE
                                     signup.visibility = View.VISIBLE
+
                                     val intent = Intent(this@SignupActivity, LoginActivity::class.java)
                                     startActivity(intent)
                                 }
@@ -92,7 +98,7 @@ class SignupActivity : AppCompatActivity() {
 
 
                             } else {
-                                // If sign in fails, display a message to the user.
+                                // If sign up fails, display a message to the user.
                                 //Log.w(TAG, "createUserWithEmail:failure", task.exception)
                                 progressBar.visibility = View.GONE
                                 signup.visibility = View.VISIBLE

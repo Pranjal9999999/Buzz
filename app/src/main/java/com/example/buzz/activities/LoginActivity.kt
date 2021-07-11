@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.example.buzz.utilities.User
+import com.google.firebase.auth.FirebaseUser
 
 class LoginActivity : AppCompatActivity() {
     lateinit var SignUp: Button
@@ -65,11 +66,14 @@ class LoginActivity : AppCompatActivity() {
                     auth.signInWithEmailAndPassword(email1.text.toString(), password1.text.toString())
                             .addOnCompleteListener(this) { task ->
                                 if (task.isSuccessful) {
+                                    val user=Firebase.auth.currentUser
                                     AppPreferences.isLogin = true
                                     AppPreferences.email = email1.text.toString()
                                     AppPreferences.password = password1.text.toString()
+                                    AppPreferences.id= auth.uid.toString()
+                                   // AppPreferences.toid=""
                                    // AppPreferences.username=user1.getName()
-                                    Log.d(ContentValues.TAG, "signInWithEmail:success")
+                                    Log.d(ContentValues.TAG, "signInWithEmail:success" )
                                     Toast.makeText(
                                             baseContext, "Logged in successfully",
                                             Toast.LENGTH_SHORT
