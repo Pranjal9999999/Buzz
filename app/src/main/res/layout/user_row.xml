@@ -8,12 +8,14 @@ android:id="@+id/user_card_chat"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/_4sdp"
     android:clickable="true"
+    android:background="@color/white"
     android:padding="@dimen/_2sdp"
     app:cardCornerRadius="20dp"
     android:elevation="@dimen/_30sdp">
 
 
     <RelativeLayout
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_5sdp"
@@ -21,14 +23,14 @@ android:id="@+id/user_card_chat"
 
         <TextView
             android:id="@+id/username_chat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
             android:text="Username"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_alignParentLeft="true"/>
 
-        <TextView
+       <!-- <TextView
             android:id="@+id/time_stamp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,6 +45,6 @@ android:id="@+id/user_card_chat"
             android:text="message"
             android:layout_alignParentRight="true"
             android:padding="@dimen/_2sdp"
-            android:layout_below="@+id/time_stamp"/>
+            android:layout_below="@+id/time_stamp"/>-->
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

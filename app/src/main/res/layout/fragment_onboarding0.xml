@@ -12,21 +12,20 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_79sdp"
+        android:layout_height="@dimen/_79sdp"
         android:background="@drawable/icon_bg"
         android:backgroundTint="@color/white"
         android:elevation="50dp"
+        android:foregroundGravity="center"
         android:scaleType="center"
+
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-
-
-        app:srcCompat="@drawable/icon5"
-        />
+        app:srcCompat="@drawable/video_app_icon" />
 
 
 

@@ -344,7 +344,7 @@ class ChatLogActivity : AppCompatActivity() {
          database.collection("/user-messages/$fromId/$toId").document().set(chatMessage)
             .addOnSuccessListener {
                 Log.d(TAG, "Saved our chat message:")
-                message_edit.text.clear()
+
                 //recycler_view.smoothScrollToPosition(adapter.itemCount - 1)
             }.addOnFailureListener { e ->
                  Log.w(TAG, "Error adding document", e)

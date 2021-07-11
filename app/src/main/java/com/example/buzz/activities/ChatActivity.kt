@@ -66,7 +66,7 @@ class ChatActivity : AppCompatActivity() {
             override fun onBindViewHolder(holder: UserViewHolder, position: Int, model: User) {
                 val card:CardView=holder.itemView.findViewById(R.id.user_card_chat)
                 val name: TextView = holder.itemView.findViewById(R.id.username_chat)
-                val time: TextView = holder.itemView.findViewById(R.id.time_stamp)
+               // val time: TextView = holder.itemView.findViewById(R.id.time_stamp)
                 //val message: TextView = holder.itemView.findViewById(R.id.latest_message)
 
                 AppPreferences.id = FirebaseAuth.getInstance().uid ?: return
