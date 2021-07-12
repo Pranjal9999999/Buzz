@@ -78,11 +78,11 @@
 
 ### Installation
 
-1. <a href="https://github.com/Pranjal9999999/Buzz/releases/download/v1.0-alpha/final-apk.apk">Install the apk file from here to your android device.</a>
-2. It will successfully insatll for devices with android above 6.0 and a free space of 140MB.
-3. Signup by entering your email and password and login with the same credentials.
-4. You will see the list of other users.
-5. Click on it and chat and video call with any of them.
+1. <a href="https://github.com/Pranjal9999999/Buzz/releases/download/v1.0-alpha/final-apk.apk">Install the apk file from here to your android device.</a> or clone the repo and go to build>apk
+3. It will successfully insatll for devices with android above 6.0 and a free space of 140MB.
+4. Signup by entering your email and password and login with the same credentials.
+5. You will see the list of other users.
+6. Click on it and chat and video call with any of them.
 
 
 
