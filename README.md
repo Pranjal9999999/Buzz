@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   
-   [![Buzz Screen Shot][product-screenshot]](app/src/res/drawable/video_app_icon.png)
+   [![Buzz Screen Shot][product-screenshot]](https://github.com/Pranjal9999999/Buzz/blob/master/app/src/main/res/drawable/video_app_icon.png)
 
   <h3 align="center">Buzz</h3>
 
