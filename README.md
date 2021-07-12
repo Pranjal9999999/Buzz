@@ -78,7 +78,7 @@
 
 ### Installation
 
-1. Install the apk file from here to your android device.
+1. <a href="https://github.com/Pranjal9999999/Buzz/releases/download/v1.0-alpha/final-apk.apk">Install the apk file from here to your android device.</a>
 2. It will successfully insatll for devices with android above 6.0 and a free space of 140MB.
 3. Signup by entering your email and password and login with the same credentials.
 4. You will see the list of other users.
