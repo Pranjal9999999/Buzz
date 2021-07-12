@@ -15,12 +15,14 @@
   <h3 align="center">Buzz</h3>
 
   <p align="center">
-    An awesome vieo conference and chatting android application!!
+    An awesome video conference and chatting android application!!
     
   </p>
 </p>
 
-
+[<img src="https://raw.githubusercontent.com/k0shk0sh/FastHub/development/.github/assets/direct-apk-download.png"
+      alt="Direct apk download"
+      height="80">](https://github.com/Pranjal9999999/Buzz/releases/download/v1.0-alpha/final-apk.apk)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
