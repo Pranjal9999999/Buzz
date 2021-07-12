@@ -79,7 +79,7 @@
 ### Installation
 
 1.Install the apk file from here <a href="https://github.com/Pranjal9999999/Buzz/releases/download/v1.0-alpha/final-apk.apk"> APK</a> to your android device.</a>
-              <b>(or)</b> 
+             <center> <b>(or)</b> </center>
   clone the repo and . go to github.properties and replace the gpr.usr with your id and gpr.key with your github personal access token.
       Step 1 : Generate a Personal Access Token for GitHub
 
