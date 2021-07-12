@@ -37,8 +37,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<p>
+<img src="https://github.com/Pranjal9999999/Buzz/blob/master/Android%20Emulator%20-%20Pixel_3a_API_29_5554%2012-07-2021%2021_16_49.png">
+   <img src="https://github.com/Pranjal9999999/Buzz/blob/master/Android%20Emulator%20-%20Pixel_3a_API_29_5554%2012-07-2021%2021_20_23.png"><br><br>
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="https://github.com/Pranjal9999999/Buzz/blob/master/Android%20Emulator%20-%20Pixel_3a_API_29_5554%2012-07-2021%2021_17_19.png"><br><br>
+<img src="https://github.com/Pranjal9999999/Buzz/blob/master/Android%20Emulator%20-%20Pixel_3a_API_29_5554%2012-07-2021%2021_18_31.png"></p>
 
 
 * A video call and chat application which maintains a database of users and their chats which can visited any time.
